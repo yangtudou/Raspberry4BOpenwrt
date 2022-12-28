@@ -11,11 +11,11 @@
 #
 
 
-# Uncomment a feed source
+# 取消注释一个源，前提是本来里面就有这个源
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
+# 增加一个源
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
